@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import layers
+import cnnf.layers as layers
 import logging
 import os
 import torch.optim as optim
@@ -10,7 +10,6 @@ import math
 import torchvision
 from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
-import pdb
 import shutil
 from tensorboardX import SummaryWriter
 

@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import layers
 import logging
 import os
 import torch.optim as optim
@@ -10,11 +9,9 @@ import math
 import torchvision
 from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
-import pdb
 import shutil
 from tensorboardX import SummaryWriter
 
-from utils import normalize
 from advertorch.attacks import GradientSignAttack, LinfPGDAttack, LinfSPSAAttack
 from advertorch.context import ctx_noparamgrad_and_eval
 

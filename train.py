@@ -1,26 +1,23 @@
 from __future__ import print_function
-import argparse
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
-from torchvision import datasets, transforms
-import matplotlib.pyplot as plt
-from shutil import copyfile
-from datetime import datetime
 import os
 import logging
 import numpy as np
 import random
 import math
+import argparse
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
 import torchvision
-from torchvision import datasets
-from torchvision import transforms
-import pdb
+from torchvision import datasets, transforms
+import matplotlib.pyplot as plt
 import shutil
+from shutil import copyfile
+from datetime import datetime
 from tensorboardX import SummaryWriter
-from model_cifar import WideResNet
-from model_mnist import CNNF
+from cnnf.model_cifar import WideResNet
+from cnnf.model_mnist import CNNF
 
 from utils import *
 from advertorch.attacks import GradientSignAttack, LinfPGDAttack

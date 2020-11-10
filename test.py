@@ -5,8 +5,8 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from shutil import copyfile
 from datetime import datetime
-from model_cifar import WideResNet
-from model_mnist import CNNF
+from cnnf.model_cifar import WideResNet
+from cnnf.model_mnist import CNNF
 from eval import Evaluator
 import numpy as np
 import os
